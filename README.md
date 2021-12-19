@@ -13,22 +13,22 @@ ScraperCase based on selenium
 
     FrameWork:
     
-        -.Net Core
+        .Net Core
     
     
     NuGets:
     
-       - Google.Apis.Sheets.v4
-       - Selenium.Support
-       - Selenium.WebDriver
-       - Selenium.WebDriver.ChromeDriver
-       - Selenium.WebDriverBackedSelenium
-       - WebDriver.ChromeDriver.win32
+       Google.Apis.Sheets.v4
+       Selenium.Support
+       Selenium.WebDriver
+       Selenium.WebDriver.ChromeDriver
+       Selenium.WebDriverBackedSelenium
+       WebDriver.ChromeDriver.win32
     
     
     Services:
     
-        -https://developers.google.com/sheets/api
+        https://developers.google.com/sheets/api
     
     
     
