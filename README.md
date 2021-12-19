@@ -29,9 +29,8 @@ ScraperCase based on selenium
 
 
 - What did you learn from this project?
-    
-    There is still lots of thing o learn that makes me excited.
-    I must improve my research skills to understand the problems and solve them faster.
+    -There is still lots of thing o learn that makes me excited.
+    -I must improve my research skills to understand the problems and solve them faster.
 
 - Answers of the additional questions.
         Additional Questions
