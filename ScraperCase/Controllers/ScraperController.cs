@@ -61,7 +61,7 @@ namespace ScraperCase.Controllers
                 }
                 else
                 {
-                    product.URL = "İsim Bilgisi bulunamadı";
+                    product.URL = "Url Information could not found";
                 }
                 #endregion
 
@@ -72,7 +72,7 @@ namespace ScraperCase.Controllers
                 }
                 else
                 {
-                    product.SKU = "SKU Bilgisi bulunamadı";
+                    product.SKU = "SKU Information could not found";
                 }
                 #endregion
 
@@ -83,7 +83,7 @@ namespace ScraperCase.Controllers
                 }
                 else
                 {
-                    product.ProductName = "İsim Bilgisi bulunamadı";
+                    product.ProductName = "ProductName Information could not found";
                 }
                 #endregion
 
@@ -99,7 +99,7 @@ namespace ScraperCase.Controllers
                 }
                 else
                 {
-                    product.Availability = "Mevcut Stok Bilgisi bulunamadı";
+                    product.Availability = "Availability Information could not found";
                 }
                 #endregion
 
@@ -110,7 +110,7 @@ namespace ScraperCase.Controllers
                 }
                 else
                 {
-                    product.Offer = "Teklif Bilgisi bulunamadı";
+                    product.Offer = "Offer Information could not found";
                 }
                 #endregion
 
@@ -121,7 +121,7 @@ namespace ScraperCase.Controllers
                 }
                 else
                 {
-                    product.ProductPrice = "Fiyat Bilgisi bulunamadı";
+                    product.ProductPrice = "Price Information could not found";
                 }
                 #endregion
 
@@ -132,7 +132,7 @@ namespace ScraperCase.Controllers
                 }
                 else
                 {
-                    product.ProductSalePrice = "Satış Fiyatı Bilgisi bulunamadı";
+                    product.ProductSalePrice = "Sale Price Information could not found";
                 }
                 #endregion
                 
