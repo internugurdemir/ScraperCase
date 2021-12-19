@@ -134,15 +134,18 @@ namespace ScraperCase.Controllers
                 }
                 #endregion
                 
-                #region ProductCode
-                if (driver.FindElements(By.XPath("//*[@id='productRight']/div/div[6]/div[2]/text()")).Count() > 0)
-                {
-                    product.ProductCode = driver.FindElements(By.XPath("//*[@id='productRight']/div/div[6]/div[2]/text()")).LastOrDefault().Text;
-                }
-                else
-                {
-                    product.ProductCode = "Kod Bilgisi bulunamadı";
-                }
+                #region ProductCode - Not Ready yet
+      
+                //if (driver.FindElements(By.CssSelector(".product-feature-content")).Count() > 0)
+                //{
+                //    var checkProductCode = driver.FindElement(By.CssSelector(".product-feature-content"));
+                //    product.ProductCode = checkProductCode.Text;
+
+                //}
+                //else
+                //{
+                //    product.ProductCode = "Kod Bilgisi bulunamadı";
+                //}
                 #endregion
 
             }

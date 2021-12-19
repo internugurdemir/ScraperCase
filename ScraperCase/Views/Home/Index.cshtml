@@ -1,6 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    var information = @TempData["Information"].ToString();
+    var information = @TempData["Information"];
 }
 
 <div class="text-center">
@@ -13,7 +13,7 @@
     </form>
     @if (information != null)
     {
-        @if (information.Contains("The Product is added please"))
+        @if (information.ToString().Contains("The Product is added please"))
         {
 
             <h3 class="warning mt-1"> @TempData["Information"] <a href="https://docs.google.com/spreadsheets/d/1JsRD6MQXwMyliPyZkplJ-T4t8Lur1QZEWEpnqFxL9ho/edit?usp=sharing">here</a>  </h3>
