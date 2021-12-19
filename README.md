@@ -2,12 +2,18 @@
 ScraperCase based on selenium
 
 - URL of the Report.
+
+
     https://docs.google.com/spreadsheets/d/1JsRD6MQXwMyliPyZkplJ-T4t8Lur1QZEWEpnqFxL9ho/edit?usp=sharing
   
   
+  
 - Used tech-stack ( library/framework etc.)
+
+
     FrameWork:
         .Net Core
+    
     
     NuGets:
         Google.Apis.Sheets.v4
@@ -17,21 +23,33 @@ ScraperCase based on selenium
         Selenium.WebDriverBackedSelenium
         WebDriver.ChromeDriver.win32
     
+    
     Services:
         https://developers.google.com/sheets/api
     
+    
+    
+
+
 
 - A brief description of the challenges you face.
+    
     
     -First challenge was I had no idea about scraping.After a few readings I understood the idea.
     -Second one was I did not use use Python and did not have much experience with JAVA because of this I use .Net Core framework.
     -Third one was caused by google. It did not allow me to create a new credential to use API.
 
    
+   
+   
+   
 - What did you learn from this project?
     
     1. There is still lots of thing o learn that makes me excited.
     2. I must improve my research skills to understand the problems and solve them faster.
+
+
+
 
 - Answers of the additional questions.
         Additional Questions
