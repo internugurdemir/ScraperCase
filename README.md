@@ -35,11 +35,11 @@ ScraperCase based on selenium
 - A brief description of the challenges you face.
     
     
-    -First challenge was I had no idea about scraping.After a few readings I understood the idea.
-    
-    -Second one was I did not use use Python and did not have much experience with JAVA because of this I use .Net Core framework.
-    
-    -Third one was caused by google. It did not allow me to create a new credential to use API.
+    - First challenge was I had no idea about scraping.After a few readings I understood the idea.
+     
+    - Second one was I did not use use Python and did not have much experience with JAVA because of this I use .Net Core framework.
+     
+    - Third one was caused by google. It did not allow me to create a new credential to use API.
 
    
    
