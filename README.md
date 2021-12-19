@@ -37,12 +37,9 @@ ScraperCase based on selenium
         Additional Questions
         1. If I’d have 10.000 urls that I should visit, then it takes hours to finish. What
         can we make to fasten this process?
-        	Even if we have 100 url to visit it may take around 1 hour. We can get these 10.000 data as list (from a Json file or from a text) then we can manipulate the data by parsing with the methods. (Based on my search, Python has an event-driven networking engine called “Python Twisted”. We can use this kind of libraries, packages to manipulate the meta-datas)
-        
-        2. What can we make or use to automate this process to run once a day?
-        Write your recommendations.
-        	We can set a method to visit specified urls from a file (Json, txt etc.) and this method can be set to initialize at 8.00 am.
-        
-        3. Please briefly explain what an API is and how it works.
-        	API is a software definition and technology that help the communication between two applications (from web app. to web app., web app. to mobile app., mobile app to web app. Etc.). It helps to data transfer without touching the main-real data security since it is a layer between data and server.
+           -Even if we have 100 url to visit it may take around 1 hour. We can get these 10.000 data as list (from a Json file or from a text) then we can manipulate the data by parsing with the methods. (Based on my search, Python has an event-driven networking engine called “Python Twisted”. We can use this kind of libraries, packages to manipulate the meta-datas)
+       2. What can we make or use to automate this process to run once a day? Write your recommendations.
+          -We can set a method to visit specified urls from a file (Json, txt etc.) and this method can be set to initialize at 8.00 am.
+       3. Please briefly explain what an API is and how it works.
+          -API is a software definition and technology that help the communication between two applications (from web app. to web app., web app. to mobile app., mobile app to web app. Etc.). It helps to data transfer without touching the main-real data security since it is a layer between data and server.
 
