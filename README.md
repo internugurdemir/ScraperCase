@@ -35,6 +35,8 @@ ScraperCase based on selenium
 
 - Answers of the additional questions.
         Additional Questions
+        
+        
         1. If I’d have 10.000 urls that I should visit, then it takes hours to finish. What
         can we make to fasten this process?
            -Even if we have 100 url to visit it may take around 1 hour. We can get these 10.000 data as list (from a Json file or from a text) then we can manipulate the data by parsing with the methods. (Based on my search, Python has an event-driven networking engine called “Python Twisted”. We can use this kind of libraries, packages to manipulate the meta-datas)
