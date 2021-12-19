@@ -27,11 +27,15 @@ ScraperCase based on selenium
     -Second one was I did not use use Python and did not have much experience with JAVA because of this I use .Net Core framework.
     -Third one was caused by google. It did not allow me to create a new credential to use API.
 
-
+####What did you learn from this project?
+                
+1. There is still lots of thing o learn that makes me excited.
+2. I must improve my research skills to understand the problems and solve them faster.
+                
 - What did you learn from this project?
     
-    1.There is still lots of thing o learn that makes me excited.
-    2.I must improve my research skills to understand the problems and solve them faster.
+    1. There is still lots of thing o learn that makes me excited.
+    2. I must improve my research skills to understand the problems and solve them faster.
 
 - Answers of the additional questions.
         Additional Questions
