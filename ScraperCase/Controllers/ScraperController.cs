@@ -13,6 +13,8 @@ using Google.Apis.Sheets.v4;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Sheets.v4.Data;
 using System;
+using System.Net.Mail;
+using System.Net;
 
 namespace ScraperCase.Controllers
 {
@@ -104,7 +106,7 @@ namespace ScraperCase.Controllers
                 #region ProductOffer
                 if (driver.FindElements(By.CssSelector(".fl .col-12 .price-discount-sec")).Count() > 0)
                 {
-                    product.Offer = driver.FindElement(By.CssSelector(".fl .col-12 .price-discount-sec")).Text;
+                    product.Offer = driver.FindElement(By.CssSelector(".fl .col-12 .price-discount-sec div.detay-indirim span")).Text;
                 }
                 else
                 {
@@ -190,9 +192,32 @@ namespace ScraperCase.Controllers
 
             //https://docs.google.com/spreadsheets/d/1JsRD6MQXwMyliPyZkplJ-T4t8Lur1QZEWEpnqFxL9ho/edit?usp=sharing
 
+            SendMail(url);
 
             TempData["Information"] = "The Product is added. Please check from ";
             return RedirectToAction("Index", "Home");
+        }
+
+        private void SendMail(string url)
+        {
+            MailMessage mail = new MailMessage();
+            SmtpClient smtpClient = new SmtpClient();
+            mail.From = new MailAddress("DenemedemirDenemedemir@gmail.com");
+            mail.To.Add(new MailAddress("ddemirugu@gmail.com"));
+
+            mail.Subject = "New Product Added";
+
+            mail.IsBodyHtml = true;
+
+            string MailText = url + " product added to https://docs.google.com/spreadsheets/d/1JsRD6MQXwMyliPyZkplJ-T4t8Lur1QZEWEpnqFxL9ho/edit?usp=sharing";
+            mail.Body = MailText;
+            smtpClient.Port = 587;
+            smtpClient.Host = "smtp.gmail.com";
+            smtpClient.EnableSsl = true;
+            smtpClient.UseDefaultCredentials = false;
+            smtpClient.Credentials = new NetworkCredential("DenemedemirDenemedemir@gmail.com", "DenemedemirDenemedemirDenemedemir123");
+            smtpClient.Send(mail);
+
         }
 
         private bool checkValidUrl(string url)
