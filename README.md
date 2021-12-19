@@ -12,7 +12,8 @@ ScraperCase based on selenium
 
 
     FrameWork:
-        .Net Core
+    
+        -.Net Core
     
     
     NuGets:
@@ -26,7 +27,8 @@ ScraperCase based on selenium
     
     
     Services:
-        https://developers.google.com/sheets/api
+    
+        -https://developers.google.com/sheets/api
     
     
     
