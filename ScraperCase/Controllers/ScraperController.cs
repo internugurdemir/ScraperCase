@@ -203,7 +203,7 @@ namespace ScraperCase.Controllers
             MailMessage mail = new MailMessage();
             SmtpClient smtpClient = new SmtpClient();
             mail.From = new MailAddress("DenemedemirDenemedemir@gmail.com");
-            mail.To.Add(new MailAddress("ddemirugu@gmail.com"));
+            mail.To.Add(new MailAddress("okan@analyticahouse.com"));
 
             mail.Subject = "New Product Added";
 
