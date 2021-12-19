@@ -1,30 +1,21 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Google.Apis.Auth.OAuth2;
+using Google.Apis.Sheets.v4;
+using Google.Apis.Sheets.v4.Data;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using ScraperCase.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 using System.Linq;
-using Google.Apis.Sheets.v4;
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Sheets.v4.Data;
-using System;
-using System.Net.Mail;
 using System.Net;
+using System.Net.Mail;
 
 namespace ScraperCase.Controllers
 {
     public class ScraperController : Controller
     {
-        [HttpGet]
-        public IActionResult ProductScraper()
-        {
-            return View();
-        }
 
         /*
          * Acessing to spread sheets by google drive api
@@ -46,7 +37,6 @@ namespace ScraperCase.Controllers
             Product product = new Product();
             using (var driver = new ChromeDriver())
             {
-                var abc = checkValidUrl(url);
                 if (!checkValidUrl(url))
                 {
                     TempData["Information"] = "Please Check URL";
